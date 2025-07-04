@@ -8,7 +8,7 @@ const Products = ({ products, addProduct, updateProduct, deleteProduct }) => {
   const [category, setCategory] = useState("all");
   const [showModal, setShowModal] = useState(false);
   const [editProduct, setEditProduct] = useState(null);
-  const filtered = products.filter((p) => {
+  const filtered = products ?? [].filter((p) => {
     const matchCat = category === "all" || p.category === category;
     const matchSearch = p.name.toLowerCase().includes(search.toLowerCase());
     return matchCat && matchSearch;

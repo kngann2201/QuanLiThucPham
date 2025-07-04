@@ -1,18 +1,32 @@
+body {
+  background-image: url(../img/nentp.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 20px;
+}
 
-.login-container {
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+}
+
+.login-container {
+  margin-top: 10%;
+  text-align: center;
+  position: relative; 
+  margin-left : 35%;
 }
 
 .login-form {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.809);
   padding: 2.5rem;
   border-radius: 16px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
 }
 
 .login-title {
@@ -22,13 +36,14 @@
 }
 
 .login-input {
-  width: 100%;
+  width: 90%;
   padding: 0.75rem 1rem;
-  margin-bottom: 1rem;
+  margin: 0.75rem 0;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 1rem;
   transition: border-color 0.3s ease;
+   position: inherit;
 }
 
 .login-input:focus {
@@ -39,15 +54,26 @@
 .login-button {
   width: 100%;
   padding: 0.75rem;
-  background-color: #007bff;
+  background-color: #0056b3;
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 1rem;
 }
 
 .login-button:hover {
-  background-color: #0056b3;
+  background-color: #057af7;
+}
+
+@media screen and (max-width : 950px) {
+    .slogan {
+      font-size: 2rem;
+    }
+    .login-container {
+      margin-left : unset;
+      margin-top: 20%;
+    }
 }
