@@ -13,11 +13,11 @@ import Setting from './pages/Settings.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      <Header />
-      <Sidebar />
-      {/* <Login /> */}
-      {/* <Products /> */}
-      <Setting />
+      {/* <Header />
+      <Sidebar /> */}
+      <Login />
+      {/* <Products />
+      <Setting /> */}
     </BrowserRouter>
   </React.StrictMode>
 );
