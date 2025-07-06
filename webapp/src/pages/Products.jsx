@@ -35,7 +35,6 @@ const Products = ({ products, addProduct, updateProduct, deleteProduct }) => {
 
   return (
     <div className="products-page">
-
       <div className="products-header">
         <h2>📦 Quản lý sản phẩm</h2>
         <button onClick={handleAdd} className="add-button">
@@ -62,22 +61,27 @@ const Products = ({ products, addProduct, updateProduct, deleteProduct }) => {
       <table className="product-table">
         <thead>
           <tr>
+            <th>Tên sản phẩmh</th>
+            <th>Loại sản phẩm</th>
+            <th>Ngày thêm</th>
+            <th>Ngày hết hạn</th>
+            <th>Đơn vị</th>
+            <th>Số lượng</th>
+            <th>Ghi chú</th>
             <th>Ảnh</th>
-            <th>Tên</th>
-            <th>Thương hiệu</th>
-            <th>Danh mục</th>
-            <th>Giá</th>
-            <th>Tồn kho</th>
-            <th>Trạng thái</th>
-            <th>Hành động</th>
           </tr>
         </thead>
         <tbody>
           {filtered.length === 0 ? (
             <tr>
-              <td colSpan="7" className="no-results">
-                Không có sản phẩm.
-              </td>
+              <td>Thảo hehe</td>
+              <td>Loại khác</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>1</td>
+              <td>bị hehe</td>
+              <td></td>
             </tr>
           ) : (
             filtered.map((p) => (

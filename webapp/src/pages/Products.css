@@ -15,21 +15,11 @@
   --button-text: rgb(0, 0, 0);
 }
 
-body {
-  background-color: white;
-  background-image : unset;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-size: 20px;
-  z-index: -100; 
-}
-
 .products-page {
-  padding: 24px;
+  padding: 0 24px;
   font-family: "Segoe UI", sans-serif;
   color: var(--text-color);
+  font-size: 20px;
 }
 
 .products-header {
@@ -61,8 +51,7 @@ body {
   flex-wrap: wrap;
 }
 
-.filters input,
-.filters select {
+.filters input, .filters select {
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -73,8 +62,7 @@ body {
   transition: border-color 0.3s;
 }
 
-.filters input:focus,
-.filters select:focus {
+.filters input:focus, .filters select:focus {
   outline: none;
   border-color: #4a90e2;
 }
@@ -89,8 +77,7 @@ body {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.product-table th,
-.product-table td {
+.product-table th, .product-table td {
   padding: 14px 16px;
   text-align: left;
   border-bottom: 1px solid #eee;

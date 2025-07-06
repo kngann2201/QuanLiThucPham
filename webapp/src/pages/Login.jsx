@@ -11,28 +11,30 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container">
-      <div className="flex">
-        <form className="login-form" onSubmit={handleSubmit}>
-          <h2 className="login-title">Nhận diện nhanh – Nhắc hạn kịp thời.<br />Quản lý thực phẩm chưa bao giờ dễ đến thế.</h2>
-          <input
-            type="email"
-            placeholder="Email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-            className="login-input"
-          />
-          <input
-            type="password"
-            placeholder="Mật khẩu"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-            className="login-input"
-          />
-          <button type="submit" className="login-button">Đăng nhập</button>
-        </form>
+    <div className="body">
+      <div className="login-container">
+        <div className="flex">
+          <form className="login-form" onSubmit={handleSubmit}>
+            <h2 className="login-title">Nhận diện nhanh – Nhắc hạn kịp thời.<br />Quản lý thực phẩm chưa bao giờ dễ đến thế.</h2>
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              className="login-input"
+            />
+            <input
+              type="password"
+              placeholder="Mật khẩu"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              className="login-input"
+            />
+            <button type="submit" className="login-button">Đăng nhập</button>
+          </form>
+        </div>
       </div>
     </div>
   );

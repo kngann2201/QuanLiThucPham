@@ -1,10 +1,18 @@
-body {
+body , root {
+  margin: 0;
+  padding:0;
+  width: 100vw;
+  height: 100vh;
+}
+.body {
   background-image: url(../img/nentp.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   font-size: 20px;
+  height: 100vh;
+  margin: 0;
 }
 
 .flex {
@@ -14,10 +22,8 @@ body {
 }
 
 .login-container {
-  margin-top: 10%;
   text-align: center;
   position: relative; 
-  margin-left : 35%;
 }
 
 .login-form {
@@ -27,6 +33,8 @@ body {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 600px;
+  margin-top: 10%;
+  margin-left : 35%;
 }
 
 .login-title {
@@ -72,7 +80,7 @@ body {
     .slogan {
       font-size: 2rem;
     }
-    .login-container {
+    .login-form {
       margin-left : unset;
       margin-top: 20%;
     }
