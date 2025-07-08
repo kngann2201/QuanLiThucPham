@@ -15,7 +15,9 @@
 .sidebar {
   width: 100%;
   padding: 10px 0;
+  width: 40%;
   background-color: var(--sidebar-bg);
+  margin:0 0.1rem 0 auto;
 }
 
 .sidebar ul {
@@ -46,6 +48,9 @@
   font-size: 18px;
 }
 
+.flex {
+  display: flex;
+}
 .sidebar {
-  display: none;
+  /* display: none; */
 }

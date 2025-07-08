@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Login.css'; // Import CSS riêng
 import 'animate.css';
+// import Sidebar from '../components/Sidebar.jsx'
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -12,10 +13,12 @@ const Login = () => {
 
   return (
     <div className="body">
+      {/* <Sidebar /> */}
       <div className="login-container">
+        <div className="slogan">Nhận diện nhanh – Nhắc hạn kịp thời.<br />Quản lý thực phẩm chưa bao giờ dễ đến thế.</div>
         <div className="flex">
           <form className="login-form" onSubmit={handleSubmit}>
-            <h2 className="login-title">Nhận diện nhanh – Nhắc hạn kịp thời.<br />Quản lý thực phẩm chưa bao giờ dễ đến thế.</h2>
+            <h2 className="login-title">Đăng nhập ngay tại đây.</h2>
             <input
               type="email"
               placeholder="Email"

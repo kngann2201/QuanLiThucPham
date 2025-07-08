@@ -1,5 +1,7 @@
 
 import "./Home.css";
+import Sidebar from '../components/Sidebar.jsx'
+import { FaCarSide } from "react-icons/fa";
 
 const Home = ({ products }) => {
 

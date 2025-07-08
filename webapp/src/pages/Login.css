@@ -25,14 +25,22 @@ body , root {
   position: relative; 
 }
 
+.slogan {
+  font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 6rem; 
+  color: #445944;
+  text-shadow: 4px 4px 0px #d5d5d5, 7px 7px 0px rgba(0, 0, 0, 0.043);
+}
 .login-form {
   background-color: rgba(255, 255, 255, 0.809);
   padding: 2.5rem;
-  border-radius: 16px;
+  border-radius: 1rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 520px;
-  margin-top: 12%;
+  max-width: 30rem;
+  margin-top: 4rem;
   display: block;
   margin-right: 40%;
 }
@@ -41,7 +49,7 @@ body , root {
   text-align: center;
   margin-bottom: 1.5rem;
   color: #333;
-  font-size: 26px;
+  font-size: 1.8rem;
 }
 
 .login-input {
@@ -79,13 +87,19 @@ body , root {
 
 @media screen and (max-width : 1200px) {
     .login-form {
-      margin-top: 18%;
+      margin-top: 2rem;
       margin-right: 25%;
+    }
+    .slogan {
+      
     }
 }
 @media screen and (max-width : 950px) {
     .login-form {
+      margin-top: 3rem;
       margin-right: unset;
-      margin-top: 25%;
+    }
+    .slogan {
+      font-size: 2rem;
     }
 }
