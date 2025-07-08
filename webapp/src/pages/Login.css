@@ -91,7 +91,7 @@ body , root {
       margin-right: 25%;
     }
     .slogan {
-      
+      margin-right: 18%;
     }
 }
 @media screen and (max-width : 950px) {
@@ -101,5 +101,6 @@ body , root {
     }
     .slogan {
       font-size: 2rem;
+      margin-right: unset;
     }
 }

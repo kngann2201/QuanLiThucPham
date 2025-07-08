@@ -13,7 +13,6 @@ const Login = () => {
 
   return (
     <div className="body">
-      {/* <Sidebar /> */}
       <div className="login-container">
         <div className="slogan">Nhận diện nhanh – Nhắc hạn kịp thời.<br />Quản lý thực phẩm chưa bao giờ dễ đến thế.</div>
         <div className="flex">

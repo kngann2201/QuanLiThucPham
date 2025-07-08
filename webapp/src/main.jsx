@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header.jsx'
 import Sidebar from './components/Sidebar.jsx'
 
-import Login from './pages/Login.jsx';
+import Login from './pages/LoginT.jsx';
 import Products from './pages/Products.jsx';
 import Setting from './pages/Settings.jsx'
 
@@ -14,9 +14,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       {/* <Header /> */}
-      <Sidebar />
-      {/* <Login /> */}
-      <Products />
+      {/* <Sidebar /> */}
+      <Login />
+      {/* <Products /> */}
       {/* <Setting /> */}
     </BrowserRouter>
   </React.StrictMode>
