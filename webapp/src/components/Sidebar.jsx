@@ -13,7 +13,8 @@ import "./Sidebar.css";
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <ul className="flex">
+      {/* <ul className="flex"> */}
+      <ul>
         <li>
           <NavLink to="/" className="nav-item">
             <FaHome className="icon" />

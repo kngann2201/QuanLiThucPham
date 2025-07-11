@@ -1,11 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-//import App from './App';
-
-import Header from './components/Header.jsx'
-import Sidebar from './components/Sidebar.jsx'
-
+import App from './App.jsx';
+import Home from './pages/Home.jsx'
 import Login from './pages/LoginT.jsx';
 import Products from './pages/Products.jsx';
 import Setting from './pages/Settings.jsx'
@@ -13,11 +10,11 @@ import Setting from './pages/Settings.jsx'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
-      {/* <Header /> */}
-      {/* <Sidebar /> */}
-      <Login />
+      {/* <Login /> */}
       {/* <Products /> */}
       {/* <Setting /> */}
+      {/* <App /> */}
+      <Home />
     </BrowserRouter>
   </React.StrictMode>
 );

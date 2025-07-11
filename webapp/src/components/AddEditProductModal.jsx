@@ -2,13 +2,15 @@ import React, { useState, useEffect } from "react";
 import "./AddEditProductModal.css";
 
 const defaultForm = {
-  name: "",
-  category: "Smartphone",
-  price: 0,
-  stock: 0,
-  image: "",
-  status: "active",
-  brand: ""
+  id: 5,
+  product_name: '',
+  category: '',
+  detected_at: '',
+  expiry_date: '',
+  unit: '',
+  quantity: 0,
+  notes: '',
+  image_url: ''
 };
 
 const AddEditProductModal = ({ isOpen, onClose, onSave, initialData }) => {
@@ -41,6 +43,7 @@ const AddEditProductModal = ({ isOpen, onClose, onSave, initialData }) => {
       <div className="modal">
         <h3 className="title">{initialData ? "Sửa sản phẩm" : "Thêm sản phẩm mới"}</h3>
         <form onSubmit={handleSubmit}>
+
           <div className="form-group">
             <label htmlFor="productName">Tên sản phẩm</label>
             <input
@@ -118,7 +121,7 @@ const AddEditProductModal = ({ isOpen, onClose, onSave, initialData }) => {
             />
           </div>
 
-            <div className="form-group">
+          <div className="form-group">
             <label htmlFor="productNote">Ghi chú</label>
             <input
               id="productNote"
@@ -128,6 +131,7 @@ const AddEditProductModal = ({ isOpen, onClose, onSave, initialData }) => {
               placeholder="Nhập ghi chú về sản phẩm tại đây....."
             />
           </div>
+
           <div className="form-group">
             <label htmlFor="image">Link ảnh</label>
             <input
@@ -145,6 +149,7 @@ const AddEditProductModal = ({ isOpen, onClose, onSave, initialData }) => {
               Hủy
             </button>
           </div>
+
         </form>
       </div>
     </div>
