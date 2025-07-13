@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './Login.css'; // Import CSS riêng
 import 'animate.css';
-// import Sidebar from '../components/Sidebar.jsx'
+
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -9,10 +9,11 @@ const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log({ email, password });
+    
   };
 
   return (
-    <div className="body">
+    <div className="body flex">
       <div className="login-container">
         <div className="slogan">Nhận diện nhanh – Nhắc hạn kịp thời.<br />Quản lý thực phẩm chưa bao giờ dễ đến thế.</div>
         <div className="flex">
@@ -34,7 +35,9 @@ const Login = () => {
               required
               className="login-input"
             />
-            <button type="submit" className="login-button">Đăng nhập</button>
+            <button type="submit" className="login-button">
+              Đăng nhập
+            </button>
           </form>
         </div>
       </div>

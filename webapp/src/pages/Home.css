@@ -1,25 +1,27 @@
-.app.light  .product-info{
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --sidebar-color: #f1f1f1;
-  --button-bg: #1579dc;
-  --button-text: white;
+* {
+  box-sizing: border-box;
 }
-
-.app.dark .product-info {
-  --navbar-bg: #065fdd; 
-  --bg-color: #1e1e2f;
-  --text-color: #000000;
-  --sidebar-color: #2b2b3c;
-  --button-bg: #4a90e2;
-  --button-text: rgb(0, 0, 0);
+.dashboard-container {
+  width: 100vw;
+  height: auto;
+  overflow-y: scroll;
+}
+/* ---------- Banner ---------- */
+.banner {
+  width: 100%;
+  margin-bottom: 10rem;
 }
 
 
+
+
+
+/* ---------- Product card ---------- */
 .dashboard-container {
   padding: 24px;
   background-color: var(--bg-color);
   color: var(--text-color);
+  width: 100%;
 }
 
 .dashboard-title {
@@ -37,7 +39,7 @@
 
 .product-card {
   background: var(--card-bg, #ffffff);
-  border-radius: 12px;
+  border-radius: 0.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -68,44 +70,3 @@
   color: var(--text-color);
 }
 
-.product-price {
-  color: #e91e63;
-  font-weight: bold;
-  margin-bottom: 6px;
-  font-size: 15px;
-}
-
-.product-stock span.in {
-  color: #4caf50;
-  font-weight: bold;
-}
-
-.product-stock span.out {
-  color: #f44336;
-  font-weight: bold;
-}
-
-.product-rating {
-  font-size: 14px;
-  color: var(--text-color-secondary, #888);
-  margin-bottom: 8px;
-}
-
-.status-badge {
-  display: inline-block;
-  padding: 4px 10px;
-  border-radius: 12px;
-  font-size: 13px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.status-badge.active {
-  background-color: #4caf50;
-  color: var(--text-color);
-}
-
-.status-badge.out-of-stock {
-  background-color: #f44336;
-  color: var(--text-color);
-}

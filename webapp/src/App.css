@@ -32,7 +32,7 @@ html, body {
   color: var(--text-color);
   transition: all 0.3s ease;
   box-sizing: border-box;
-  overflow: hidden; /* Tắt scroll toàn trang */
+  /* overflow: hidden; Tắt scroll toàn trang */
 }
 
 /* ============================

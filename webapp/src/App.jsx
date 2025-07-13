@@ -1,10 +1,10 @@
 // import React, { useState } from "react";
 import React  from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
+// import Header from "./components/Header";
+// import Sidebar from "./components/Sidebar";
 import Home from "./pages/Home";
-import Login from "./pages/LoginT";
+import Login from "./pages/Login";
 import Products from "./pages/Products";
 import { useProducts } from "./hooks/useProducts";
 import Settings from "./pages/Settings";
