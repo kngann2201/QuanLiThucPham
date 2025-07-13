@@ -54,7 +54,7 @@ body , root {
 }
 
 .login-input {
-  width: 90%;
+  width: 100%;
   padding: 0.7rem 1rem;
   margin: 0.75rem 0;
   border: 1px solid #ddd;
